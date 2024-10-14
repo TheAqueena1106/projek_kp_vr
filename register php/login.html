@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0
+,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form">
+      <div class="form-container">
+        <h2>Log In</h2>
+        <div class="image-logo">
+          <img src="pgp_logo-removebg-preview.png" height="80px" width="80px" />
+        </div>
+        <form action="login.php" method="post">
+          <label for="username">Username:</label><br />
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+          /><br /><br />
+
+          <label for="password">Password:</label><br />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+          /><br /><br />
+
+          <button type="submit" class="btn btn-primary">Log In</button>
+          <p class="register-link">
+            Belum Punya Account?<a href="register.html"> Sign In</a>
+          </p>
+        </form>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>

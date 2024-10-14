@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pengajuan Perusahaan</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0
+,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="utf-8" />
+    <title>E-procurement</title>
+    <link rel="stylesheet" href="indeks.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <header>
+      <div class="jumbotron">
+        <h1>Pratama Galuh Perkasa</h1>
+        <p>
+          Your business goals are our priority
+        </p>
+      </div>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="indeks_user.html">Home</a>
+          </li>
+          <li>
+            <a href="form_pengajuan_perusahaan.html">Daftar Rekanan</a>
+          </li>
+          <li>
+            <a href="form_koorporasi_perusahaan.html">Syarat & Ketentuan Berkas</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Konten artikel -->
+      <div id="content">
+        <article id="Pendaftaran" class="card">
+          <div class="form">
+            <div class="form-container-1">
+              <h2>Pendaftaran</h2>
+              <form action="form_pengajuan_perusahaan.php" method="post">
+                <div class="form-group">
+                  <label for="nama_terdaftar">Nama Terdaftar:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nama_terdaftar"
+                    name="nama_terdaftar"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="group_holding">Group Holding:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="group_holding"
+                    name="group_holding"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="siup">SIUP:</label>
+                  <input type="text" class="form-control" id="siup" name="siup" />
+                </div>
+                <div class="form-group">
+                  <label for="alamat_terdaftar">Alamat Terdaftar:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="alamat_terdaftar"
+                    name="alamat_terdaftar"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="nama_dagang">Nama Dagang:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nama_dagang"
+                    name="nama_dagang"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="npwp_perusahaan">NPWP Perusahaan:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="npwp_perusahaan"
+                    name="npwp_perusahaan"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="tdp">TDP:</label>
+                  <input type="text" class="form-control" id="tdp" name="tdp" />
+                </div>
+                <div class="form-group">
+                  <label for="alamat_dagang">Alamat Dagang:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="alamat_dagang"
+                    name="alamat_dagang"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="telpon_fax">Telpon/Fax:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="telpon_fax"
+                    name="telpon_fax"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="kepemilikan_perusahaan">Kepemilikan Perusahaan:</label>
+                  <select
+                    class="form-control"
+                    id="kepemilikan_perusahaan"
+                    name="kepemilikan_perusahaan"
+                    required
+                  >
+                    <option value="Milik Sendiri">Milik Sendiri</option>
+                    <option value="Joint">Joint</option>
+                    <option value="Incorporasi">Incorporasi</option>
+                    <option value="Lainnya">Lainnya</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="type_perusahaan">Type Perusahaan:</label>
+                  <select
+                    class="form-control"
+                    id="type_perusahaan"
+                    name="type_perusahaan"
+                    required
+                  >
+                    <option value="PT">PT</option>
+                    <option value="CV">CV</option>
+                    <option value="UD">UD</option>
+                    <option value="Lainnya">Lainnya</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="type_industri_perusahaan"
+                    >Type Industri Perusahaan:</label
+                  >
+                  <select
+                    class="form-control"
+                    id="type_industri_perusahaan"
+                    name="type_industri_perusahaan"
+                    required
+                  >
+                    <option value="Supplier">Supplier</option>
+                    <option value="Kontraktor">Kontraktor</option>
+                    <option value="Trading">Trading</option>
+                    <option value="Jasa">Jasa</option>
+                    <option value="Pemerintahan">Pemerintahan</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="bidang_pekerjaan">Bidang Pekerjaan:</label>
+                  <select
+                    class="form-control"
+                    id="bidang_pekerjaan"
+                    name="bidang_pekerjaan"
+                    required
+                  >
+                    <option value="Alat Berat">Alat Berat</option>
+                    <option value="Mesin">Mesin</option>
+                    <option value="Oli">Oli</option>
+                    <option value="Lainnya">Lainnya</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="nama_direktur">Nama Direktur:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nama_direktur"
+                    name="nama_direktur"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="alamat_direktur">Alamat Direktur:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="alamat_direktur"
+                    name="alamat_direktur"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="no_telpon_direktur">No Telpon Direktur:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="no_telpon_direktur"
+                    name="no_telpon_direktur"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="omset_per_tahun">Omset Per Tahun:</label>
+                  <input
+                    type="number"
+                    step="0.01"
+                    class="form-control"
+                    id="omset_per_tahun"
+                    name="omset_per_tahun"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="nama_supplier">Nama Supplier:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nama_supplier"
+                    name="nama_supplier"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="presentase_supplier">Presentase Supplier:</label>
+                  <input
+                    type="number"
+                    step="0.01"
+                    class="form-control"
+                    id="presentase_supplier"
+                    name="presentase_supplier"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="syarat_pembayaran_supplier"
+                    >Syarat Pembayaran Supplier:</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="syarat_pembayaran_supplier"
+                    name="syarat_pembayaran_supplier"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="nama_konsumen">Nama Konsumen:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nama_konsumen"
+                    name="nama_konsumen"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="presentase_konsumen">Presentase Konsumen:</label>
+                  <input
+                    type="number"
+                    step="0.01"
+                    class="form-control"
+                    id="presentase_konsumen"
+                    name="presentase_konsumen"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="syarat_pembayaran_konsumen"
+                    >Syarat Pembayaran Konsumen:</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="syarat_pembayaran_konsumen"
+                    name="syarat_pembayaran_konsumen"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="nama_purchasing">Nama Purchasing:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nama_purchasing"
+                    name="nama_purchasing"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="kontak_purchasing">Kontak Purchasing:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="kontak_purchasing"
+                    name="kontak_purchasing"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="no_rekening">No Rekening:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="no_rekening"
+                    name="no_rekening"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="nama_bank">Nama Bank:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nama_bank"
+                    name="nama_bank"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="nama_rekening">Nama Rekening:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nama_rekening"
+                    name="nama_rekening"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="cabang">Cabang:</label>
+                  <input type="text" class="form-control" id="cabang" name="cabang" />
+                </div>
+                <div class="form-group">
+                  <label for="limit_kredit">Limit Kredit:</label>
+                  <input
+                    type="number"
+                    step="0.01"
+                    class="form-control"
+                    id="limit_kredit"
+                    name="limit_kredit"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="jangka_waktu">Jangka Waktu:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="jangka_waktu"
+                    name="jangka_waktu"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="jatuh_tempo">Jatuh Tempo:</label>
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="jatuh_tempo"
+                    name="jatuh_tempo"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="ketentuan_penalty">Ketentuan Penalty:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="ketentuan_penalty"
+                    name="ketentuan_penalty"
+                  />
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </body>
+      </html>
+      
+        </article>
+      </div>
+
+      <!-- Konten samping -->
+      <aside>
+        <article class="profile" class="profile-card">
+            <header>
+          <h2>Pratama Galuh Perkasa</h2>
+          <p> Your business goals are our priority</p>
+          <figure>
+            <img src="pgp_logo-removebg-preview.png" />
+            <figcaption></figcaption>
+          </figure>
+        </header>
+        <section>
+            <section>
+                <h3>Informasi lainnya</h3>
+           
+                <table>
+                  <tr>
+                    <th>Kontak</th>
+                    <td>(0254)570700</td>
+                  </tr>
+                  <tr>
+                    <th>Profile</th>
+                    <td>ptpgp.co.id</td>
+                  </tr>
+                  <tr>
+                    <th>Alamat</th>
+                    <td>JL.Mayjend Sutoyo No.18,Rw. Arum,Kec. Grogol,Kota Cilegon<sup>2</sup></td>
+                  </tr>
+                  <tr>
+                    <th>E-mail</th>
+                    <td>admid@ptpgp.com</td>
+                  </tr>
+                </table>
+          </section>
+        </article>
+      </aside>
+    </main>
+    <footer>
+      <p>Kuliah Praktek &#169; ITERA</p>
+    </footer>
+  </body>
+</html>
+
+  
+    

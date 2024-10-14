@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Korporasi Perusahaan</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="indeks.css">
+  </head>
+  <body>
+   
+    <div class="jumbotron">
+      <h1>Pratama Galuh Perkasa</h1>
+      <p>
+        Your business goals are our priority
+      </p>
+    </div>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="indeks_user.html">Home</a>
+        </li>
+        <li>
+          <a href="form_pengajuan_perusahaan.html">Daftar Rekanan</a>
+        </li>
+        <li>
+          <a href="form_koorporasi_perusahaan.html">Syarat & Ketentuan Berkas</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Konten artikel -->
+    <div id="content">
+      <article id="sejarah" class="card">
+        <div class="container">
+          <h2>Syarat Ketentuan Berkas</h2>
+          <form action="form_koorporasi_perusahaan.php" method="post">
+            <div class="form-group">
+              <label for="nama_perusahaan">Nama Perusahaan:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nama_perusahaan"
+                name="nama_perusahaan"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="nama_pemilik">Nama Pemilik:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nama_pemilik"
+                name="nama_pemilik"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="nama_group_usaha">Nama Group Usaha:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nama_group_usaha"
+                name="nama_group_usaha"
+              />
+            </div>
+            <div class="form-group">
+              <label for="alamat_perusahaan">Alamat Perusahaan:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="alamat_perusahaan"
+                name="alamat_perusahaan"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="formulir_aplikasi">Formulir Aplikasi:</label>
+              <select
+                class="form-control"
+                id="formulir_aplikasi"
+                name="formulir_aplikasi"
+                required
+              >
+                <option value="Ada">Ada</option>
+                <option value="Tidak Ada">Tidak Ada</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="akta_perusahaan">Akta Perusahaan:</label>
+              <select
+                class="form-control"
+                id="akta_perusahaan"
+                name="akta_perusahaan"
+                required
+              >
+                <option value="Ada">Ada</option>
+                <option value="Tidak Ada">Tidak Ada</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="akta_pengesahan_menhukam"
+                >Akta Pengesahan Menhukam:</label
+              >
+              <select
+                class="form-control"
+                id="akta_pengesahan_menhukam"
+                name="akta_pengesahan_menhukam"
+                required
+              >
+                <option value="Ada">Ada</option>
+                <option value="Tidak Ada">Tidak Ada</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="siup">SIUP:</label>
+              <select class="form-control" id="siup" name="siup" required>
+                <option value="Ada">Ada</option>
+                <option value="Tidak Ada">Tidak Ada</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="ktp">KTP:</label>
+              <select class="form-control" id="ktp" name="ktp" required>
+                <option value="Ada">Ada</option>
+                <option value="Tidak Ada">Tidak Ada</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="tdp">TDP:</label>
+              <select class="form-control" id="tdp" name="tdp" required>
+                <option value="Ada">Ada</option>
+                <option value="Tidak Ada">Tidak Ada</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="sim">SIM:</label>
+              <select class="form-control" id="sim" name="sim" required>
+                <option value="Ada">Ada</option>
+                <option value="Tidak Ada">Tidak Ada</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="surat_keterangan_domisili"
+                >Surat Keterangan Domisili:</label
+              >
+              <select
+                class="form-control"
+                id="surat_keterangan_domisili"
+                name="surat_keterangan_domisili"
+                required
+              >
+                <option value="Ada">Ada</option>
+                <option value="Tidak Ada">Tidak Ada</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="paspor">Paspor:</label>
+              <select class="form-control" id="paspor" name="paspor" required>
+                <option value="Ada">Ada</option>
+                <option value="Tidak Ada">Tidak Ada</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="spt_terbaru">SPT Terbaru:</label>
+              <select
+                class="form-control"
+                id="spt_terbaru"
+                name="spt_terbaru"
+                required
+              >
+                <option value="Ada">Ada</option>
+                <option value="Tidak Ada">Tidak Ada</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="company_profile">Company Profile:</label>
+              <select
+                class="form-control"
+                id="company_profile"
+                name="company_profile"
+                required
+              >
+                <option value="Ada">Ada</option>
+                <option value="Tidak Ada">Tidak Ada</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="laporan_keuangan">Laporan Keuangan:</label>
+              <select
+                class="form-control"
+                id="laporan_keuangan"
+                name="laporan_keuangan"
+                required
+              >
+                <option value="Ada">Ada</option>
+                <option value="Tidak Ada">Tidak Ada</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </article>
+    </div>
+
+    <!-- Konten samping -->
+    <aside>
+      <article class="profile" class="profile-card">
+          <header>
+        <h2>Pratama Galuh Perkasa</h2>
+        <p> Your business goals are our priority</p>
+        <figure>
+          <img src="pgp_logo-removebg-preview.png" />
+          <figcaption></figcaption>
+        </figure>
+      </header>
+      <section>
+          <section>
+              <h3>Informasi lainnya</h3>
+         
+              <table>
+                <tr>
+                  <th>Kontak</th>
+                  <td>(0254)570700</td>
+                </tr>
+                <tr>
+                  <th>Profile</th>
+                  <td>ptpgp.co.id</td>
+                </tr>
+                <tr>
+                  <th>Alamat</th>
+                  <td>JL.Mayjend Sutoyo No.18,Rw. Arum,Kec. Grogol,Kota Cilegon<sup>2</sup></td>
+                </tr>
+                <tr>
+                  <th>E-mail</th>
+                  <td>admid@ptpgp.com</td>
+                </tr>
+              </table>
+        </section>
+      </article>
+    </aside>
+  </main>
+  <footer>
+    <p>Kuliah Praktek &#169; ITERA</p>
+  </footer>
+</body>
+</html>
+
+  
